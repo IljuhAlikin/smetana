@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20231011214603" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231011214603"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231011214603" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20231011214603">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20231015154831" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231015154831"></script>
+    <link rel="stylesheet" href="css/intlTelInput.css?_v=20231015154831">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231015154831" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20231015154831">
     <title>Вебинар</title>
 </head>
 
@@ -18,7 +19,7 @@
     <div class="header__container">
         <div class="header__body">
             <a href="index.html" class="header__logo">
-                <picture><source srcset="../img/logo.webp" type="image/webp"><img src="../img/logo.png" alt="" class="logo-img"></picture>
+                <img src="img/logo.svg" alt="" class="logo-img">
             </a>
             <nav class="header__menu">
                 <ul class="header__list">
@@ -43,7 +44,7 @@
                 </ul>
 
             </nav>
-            <a href="#" class="header__btn">
+            <a href="measure.html" class="header__btn">
                 Войти
             </a>
             <div class="header__burger" id="headerBurger">
@@ -52,13 +53,14 @@
         </div>
     </div>
 </header>
+<div class="topelement" id="top"></div>
         <main class="main">
             <section class="cousre-section fullscrean webinar-section intensive-section">
                 <div class="fullscrean__body">
                     <div class="title-section">
 
                     </div>
-                    <div class="cousre__content webinar__content fullscrean-centered ">
+                    <div class="cousre__content webinar__content  ">
                         <h1 class="main-section__title cousre-section__title title webinar-section__title">
                             Узнай о профессии <span>инженера-сметчика</span>
                             и зарабатывай <span>удаленно</span>
@@ -149,17 +151,14 @@
                                     новая профессия
                                 </h4>
                                 <div class="item-skill__text">
-                                    Разберем необходимые навыки, которые позволят вам достичь успеха в новой для вас
-                                    профессии. Поверьте, вы справитесь!
-                                </div>
-                            </div>
-                            <div class="skill__item item-skill">
-                                <h4 class="item-skill__title">
-                                    Высокая оплата
-                                </h4>
-                                <div class="item-skill__text">
-                                    Узнаете в каких программах работают профессиональные сметчики и убедитесь,
-                                    что их очень просто освоить.
+                                    <ul class="column-program ul-list ul-list_black">
+                                        <li>
+                                            Откройте для себя удаленную профессию
+                                        </li>
+                                        <li>
+                                            не в IT с низкой конкуренцией.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="skill__item item-skill">
@@ -167,8 +166,26 @@
                                     четкое понимание
                                 </h4>
                                 <div class="item-skill__text">
-                                    Звучит сложно, но на самом деле это не так! Разберем что это такое и научимся
-                                    с этим работать.
+                                    <ul class="column-program ul-list ul-list_black">
+                                        <li>
+                                            Доход начинающего сметчика от 80 000₽.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill__item item-skill">
+                                <h4 class="item-skill__title">
+                                    Высокая оплата
+                                </h4>
+                                <div class="item-skill__text">
+                                    <ul class="column-program ul-list ul-list_black">
+                                        <li>
+                                            Откройте для себя удаленную профессию
+                                        </li>
+                                        <li>
+                                            После вебинара вы будете знать что делать и как начать.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="skill__item item-skill">
@@ -176,8 +193,11 @@
                                     опытный спикер
                                 </h4>
                                 <div class="item-skill__text">
-                                    Это основа сметного дела, поэтому без нее никуда. А я облегчу вам изучение
-                                    нормативных баз.
+                                    <ul class="column-program ul-list ul-list_black">
+                                        <li>
+                                            Владелица собственного успешного сметного агентства и школы
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -510,30 +530,30 @@
                 </div>
             </section>
             <section class="booking">
-                <div class="booking__container">
-                    <h2 class="booking__title title h2-title">
-                        Запишись
-                        <span class="booking-span">на бесплатный вебинар</span>
-                    </h2>
-                    <div class="course__subtitle subtitle booking__subtitle">
-                        И начни свой путь в
-                        <span>сметном деле</span>
-                    </div>
-                    <div class="booking__wrapper">
-                        <div class="booking__column">
-                            <picture><source srcset="img/speaker.webp" type="image/webp"><img src="img/speaker.png" alt="" class="booking__img"></picture>
-                        </div>
-                        <div class="booking__column">
-                            <form action="" class="booking__form form-booking">
-                                <input type="text" class="form-booking__input" placeholder="Имя">
-                                <input type="text" class="form-booking__input">
-                                <input type="text" class="form-booking__input" placeholder="e-mail">
-                                <a href="#" class="section-btn main-section__btn form-booking__btn">Записаться</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="booking__container">
+        <h2 class="booking__title title h2-title">
+            Запишись
+            <span class="booking-span">на бесплатный вебинар</span>
+        </h2>
+        <div class="course__subtitle subtitle booking__subtitle">
+            И начни свой путь в
+            <span>сметном деле</span>
+        </div>
+        <div class="booking__wrapper">
+            <div class="booking__column">
+                <picture><source srcset="img/speaker.webp" type="image/webp"><img src="img/speaker.png" alt="" class="booking__img"></picture>
+            </div>
+            <div class="booking__column">
+                <form action="" class="booking__form form-booking">
+                    <input type="text" class="form-booking__input" placeholder="Имя">
+                    <input type="tel" class="form-booking__input" id="phone">
+                    <input type="email" class="form-booking__input" placeholder="e-mail">
+                    <a href="#" class="section-btn main-section__btn form-booking__btn">Записаться</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
             <section class="faq">
                 <div class="faq__container">
                     <div class="faq__wrapper">
@@ -637,17 +657,24 @@
                     </div>
                 </a>
                 <div class="footer__media">
-                    <picture><source srcset="img/media-tg.webp" type="image/webp"><img src="img/media-tg.png" alt=""></picture>
-                    <picture><source srcset="img/media-whatsapp.webp" type="image/webp"><img src="img/media-whatsapp.png" alt=""></picture>
-                    <picture><source srcset="img/media-viber.webp" type="image/webp"><img src="img/media-viber.png" alt=""></picture>
+                    <a href="#">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/whatsup.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/viber.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231011214603"></script>
-    <script src="js/app.min.js?_v=20231011214603"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231015154831"></script>
+    <script src="js/intlTelInput-jquery.min.js?_v=20231015154831"></script>
+    <script src="js/app.min.js?_v=20231015154831"></script>
 </body>
 
 </html>

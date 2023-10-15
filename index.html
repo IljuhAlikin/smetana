@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20231011214603" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231011214603"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231011214603" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20231011214603">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20231015154831" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231015154831"></script>
+    <link rel="stylesheet" href="css/intlTelInput.css?_v=20231015154831">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231015154831" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20231015154831">
     <title>Главная</title>
 </head>
 
@@ -18,7 +19,7 @@
     <div class="header__container">
         <div class="header__body">
             <a href="index.html" class="header__logo">
-                <picture><source srcset="../img/logo.webp" type="image/webp"><img src="../img/logo.png" alt="" class="logo-img"></picture>
+                <img src="img/logo.svg" alt="" class="logo-img">
             </a>
             <nav class="header__menu">
                 <ul class="header__list">
@@ -43,7 +44,7 @@
                 </ul>
 
             </nav>
-            <a href="#" class="header__btn">
+            <a href="measure.html" class="header__btn">
                 Войти
             </a>
             <div class="header__burger" id="headerBurger">
@@ -52,6 +53,7 @@
         </div>
     </div>
 </header>
+<div class="topelement" id="top"></div>
         <main class="main">
             <section class="main-section fullscrean">
                 <div class="fullscrean__body">
@@ -210,7 +212,7 @@
                                     Недостаточно просто изучить профессию -
                                     <span>мы учим зарабатывать на ней!</span>
                                 </h2>
-                                <a href="#" class="main-section__btn teach__btn">
+                                <a href="#top" class="main-section__btn teach__btn modal-test-open">
                                     Начать зарабатывать
                                 </a>
                             </div>
@@ -318,7 +320,7 @@
                                 <div class="date-hesitate__column">25 сентября</div>
                                 <div class="date-hesitate__column">19:00</div>
                             </div>
-                            <a href="#" class="hesitate__btn">Записаться</a>
+                            <a href="#top" class="hesitate__btn modal-regitration-open">Записаться</a>
                         </div>
                         <picture><source srcset="img/calendar.webp" type="image/webp"><img src="img/calendar.png" alt="" class="calendar"></picture>
                     </div>
@@ -416,6 +418,80 @@
                 </div>
             </section>
         </main>
+        <div class="modal-container" id="modalRegistration">
+            <div class="modal">
+                <div class="modal__body">
+                    <a href="#top" class="modal-close"></a>
+                    <h2 class="h2-title modal__title ">
+                        Запишись
+                        на <span>бесплатный вебинар</span>
+                    </h2>
+                    <div class="subtitle modal__subtitle ">
+                        И начни свой путь в <span>сметном деле</span>
+                    </div>
+                    <div class="modal__form">
+                        <div class="modal__column">
+                            <form action="" class="booking__form form-booking">
+                                <input type="text" class="form-booking__input modal-booking__input" placeholder="Имя">
+                                <input type="tel" class="form-booking__input modal-booking__input" id="phone">
+                                <input type="email" class="form-booking__input modal-booking__input"
+                                    placeholder="e-mail">
+                            </form>
+                            <a href="registration.html" class="section-btn modal__btn ">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container" id="modalTest">
+            <div class="modal">
+                <div class="modal__body">
+                    <a href="#top" class="modal-close"></a>
+                    <form class="modal__form test-content">
+                        <div class="modal__row row-modal">
+                            <h3 class="row-modal__title">1. Хочешь быть сметчиком?</h3>
+                            <div class="row-modal__options">
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Хочу</label>
+                                </div>
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Не хочу</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__row row-modal">
+                            <h3 class="row-modal__title">2. Хочешь быть сметчиком?</h3>
+                            <div class="row-modal__options">
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Хочу</label>
+                                </div>
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Не хочу</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__row row-modal">
+                            <h3 class="row-modal__title">3. Хочешь быть сметчиком?</h3>
+                            <div class="row-modal__options">
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Хочу</label>
+                                </div>
+                                <div class="row-modal__option">
+                                    <input type="checkbox" class="modal__checkbox">
+                                    <label for="" class="modal__label">Не хочу</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button href="#top" class="section-btn">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
     <div class="footer__container">
         <div class="footer__wrapper">
@@ -442,17 +518,24 @@
                     </div>
                 </a>
                 <div class="footer__media">
-                    <picture><source srcset="img/media-tg.webp" type="image/webp"><img src="img/media-tg.png" alt=""></picture>
-                    <picture><source srcset="img/media-whatsapp.webp" type="image/webp"><img src="img/media-whatsapp.png" alt=""></picture>
-                    <picture><source srcset="img/media-viber.webp" type="image/webp"><img src="img/media-viber.png" alt=""></picture>
+                    <a href="#">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/whatsup.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/viber.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231011214603"></script>
-    <script src="js/app.min.js?_v=20231011214603"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231015154831"></script>
+    <script src="js/intlTelInput-jquery.min.js?_v=20231015154831"></script>
+    <script src="js/app.min.js?_v=20231015154831"></script>
 </body>
 
 </html>
