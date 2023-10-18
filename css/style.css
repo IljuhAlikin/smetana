@@ -1538,7 +1538,7 @@ body.lock {
 .booking__form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .form-booking__input {
@@ -2108,6 +2108,14 @@ body.lock {
   padding: 0px 40px;
 }
 
+.feedback-intensive {
+  margin-bottom: 380px;
+}
+
+.measure-title {
+  text-transform: none !important;
+}
+
 @media (max-width: 1487.98px) {
   .calendar {
     right: 0;
@@ -2159,6 +2167,10 @@ body.lock {
     font-size: 14px;
     padding: 9px 25px;
     border-radius: 5px;
+  }
+
+  .salary__title {
+    margin-bottom: 40px;
   }
 
   .speakers .swiper-wrapper {
@@ -2498,6 +2510,10 @@ body.lock {
     align-items: center;
   }
 
+  .booking__form {
+    gap: 13px;
+  }
+
   .form-booking__input {
     max-width: 600px;
     height: 60px;
@@ -2643,6 +2659,7 @@ body.lock {
 
   .teach__content {
     flex-direction: column;
+    gap: 20px;
   }
 
   .teach__title {
@@ -2803,11 +2820,19 @@ body.lock {
   .modal__btn {
     font-size: 24px;
   }
+
+  .feedback-intensive {
+    margin-bottom: 200px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .main-section__title {
     font-size: 24px;
+  }
+
+  .events__list_adaptive {
+    left: 8px;
   }
 
   .fullscrean__body {
@@ -3039,6 +3064,11 @@ body.lock {
   .hhru-content {
     position: relative;
     left: 0;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .rates__wrapper {
     gap: 10px;
   }
 
@@ -3311,6 +3341,14 @@ body.lock {
   .modal__btn {
     font-size: 22px;
   }
+
+  .form-booking__btn {
+    font-size: 18px;
+  }
+
+  .feedback-intensive {
+    margin-bottom: 180px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -3320,12 +3358,79 @@ body.lock {
     border-radius: 5px;
   }
 
+  .measure-subtitle {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .program__title {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .questions-block__circle {
+    top: -17px;
+  }
+
+  .form-booking__btn {
+    margin-top: 15px;
+  }
+
+  .questions-block__title::after,
+  .questions-block__title::before {
+    top: 15px;
+  }
+
+  .program {
+    margin-bottom: 90px;
+  }
+
   .events-body {
     margin-top: 60px;
   }
 
+  .skills__title {
+    max-width: 235px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .fullscrean__body {
+    padding: 0px 8px;
+  }
+
+  .installment-plan {
+    padding-top: 30px;
+  }
+
+  .about__wrapper {
+    gap: 10px;
+  }
+
+  .work__column {
+    gap: 15px;
+  }
+
   .program__container {
     padding: 0px 7px;
+  }
+
+  .header__logo img {
+    max-width: 50px;
+  }
+
+  .header__body {
+    max-height: 50px;
+  }
+
+  .footer__column img {
+    max-width: 72px;
+  }
+
+  .level__title {
+    max-width: 90%;
   }
 
   .cousre__content {
@@ -3473,7 +3578,7 @@ body.lock {
   }
 
   .fullscrean__body {
-    margin-top: 80px;
+    margin-top: 75px;
   }
 
   .modal__body {
@@ -3573,7 +3678,7 @@ body.lock {
   }
 
   .events {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
 
   .content-events__wrapper {
@@ -3605,7 +3710,7 @@ body.lock {
   }
 
   .slide-feedback-image-area img {
-    max-height: 370px;
+    max-height: 350px;
   }
 
   .where {
@@ -3937,7 +4042,7 @@ body.lock {
   }
 
   .dialog-area {
-    top: -80px;
+    top: -65px;
   }
 
   .dialog-img {
@@ -4005,8 +4110,13 @@ body.lock {
     margin-bottom: 15px;
   }
 
+  .measure__btn {
+    padding: 16px 100px;
+  }
+
   .webinar__btn {
     font-size: 16px;
+    padding: 16px 40px;
   }
 
   .webinar-section__title {
@@ -4041,6 +4151,7 @@ body.lock {
   .program__item {
     padding: 10px 20px 7px 25px;
     border-radius: 20px;
+    box-shadow: 0 2px 10px 0 rgba(225, 225, 225, 0.78);
   }
 
   .item-rates__title {
@@ -4090,10 +4201,6 @@ body.lock {
     margin-top: 10px;
   }
 
-  .salary__title {
-    margin-bottom: 0px;
-  }
-
   .cousre-section {
     margin-bottom: 140px;
   }
@@ -4112,6 +4219,23 @@ body.lock {
 
   .event-section {
     margin-bottom: 60px;
+  }
+
+  .form-booking__btn {
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .feedback-intensive {
+    margin-bottom: 140px;
+  }
+
+  .measure-section {
+    margin-bottom: 30px;
+  }
+
+  .booking__subtitle {
+    margin-bottom: 40px;
   }
 }
 
@@ -4184,11 +4308,13 @@ body.lock {
   }
 
   .questions-block__title::after {
-    right: 4px;
+    right: 6px;
+    width: 8px;
   }
 
   .questions-block__title::before {
-    right: 11px;
+    right: 12px;
+    width: 8px;
   }
 
   .achievements-host__title {
@@ -4285,5 +4411,10 @@ body.lock {
 
   .video__movie iframe {
     max-height: 170px;
+  }
+
+  .questions-block__title::after,
+  .questions-block__title::before {
+    top: 15px;
   }
 }
