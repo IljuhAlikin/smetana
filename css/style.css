@@ -406,6 +406,7 @@ body.lock {
   max-width: 80%;
   margin: 0 auto;
   margin-top: 15px;
+  height: 14px !important;
 }
 
 .where {
@@ -2122,6 +2123,11 @@ body.lock {
 
 .program .swiper-slide-active {
   background: #FFF;
+}
+
+.swiper-pagination-progressbar {
+  background: rgb(226, 226, 226);
+  height: 14px;
 }
 
 @media (max-width: 1487.98px) {
@@ -4247,6 +4253,22 @@ body.lock {
 
   .booking__subtitle {
     margin-bottom: 40px;
+  }
+
+  .program .swiper-wrapper {
+    padding: 30px 0px;
+  }
+
+  .program .swiper-slide {
+    box-shadow: 0 2px 40px 0 rgba(225, 225, 225, 0.78);
+  }
+
+  .program__title {
+    margin-bottom: 0;
+  }
+
+  .program .programSlider-pagination {
+    margin-top: 0;
   }
 }
 
